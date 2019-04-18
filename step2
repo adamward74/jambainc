@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cd
+
+cd tensorflow/models/research
+
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+
+cd object_detection
+
+#mkdir data
+mkdir images
+mkdir training
+
+cd images
+
+mkdir train
+mkdir test
+
+cd ..
+
